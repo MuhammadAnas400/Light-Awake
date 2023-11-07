@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "468523640148",
+    "project_id": "lightawake-7f932",
+    "storage_bucket": "lightawake-7f932.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468523640148:android:6949738a9415d289ecd4c1",
+        "android_client_info": {
+          "package_name": "com.lightawakereimagined"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468523640148-bg9de7h9ea52tsk9re77sgh891gcg4t3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lightawakereimagined",
+            "certificate_hash": "d4ade082a94248d759d9b6f5f509a9006247bab7"
+          }
+        },
+        {
+          "client_id": "468523640148-rknb2ha1qabpm06ah2eevkdb05etfs4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lightawakereimagined",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "468523640148-tfa82k0trnc4hs7r8200670jdtf5972u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTLle4q28NLTVOjJdVanOiaigocQ1uV40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468523640148-tfa82k0trnc4hs7r8200670jdtf5972u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

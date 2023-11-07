@@ -1,0 +1,16 @@
+# OSX
+#
+.DS_Store
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+gradle.properties
+*.iml
+*.hprof
+lightawake_uploadkey_v2.jks
+# Bundle artifacts
+*.jsbundle

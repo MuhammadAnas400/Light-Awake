@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>836497878854-j8jmfj08igg5qm0oe29cdn1udh0gkdos.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.836497878854-j8jmfj08igg5qm0oe29cdn1udh0gkdos</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7iq_Y1ZKKZKQX_8Ig0gn_aEjYovqSexk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>836497878854</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lightawake.2021</string>
+	<key>PROJECT_ID</key>
+	<string>lightawake-793c1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lightawake-793c1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:836497878854:ios:1f56004a9079b1d26c7f47</string>
+</dict>
+</plist>

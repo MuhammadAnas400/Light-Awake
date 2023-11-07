@@ -1,0 +1,980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		8EB8757D01DB522862E26917 /* libPods-lightawake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0511A3DEA63F2D6F98E52119 /* libPods-lightawake.a */; };
+		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		BD0FC9842A1F4DBE005799B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD0FC9832A1F4DBD005799B9 /* GoogleService-Info.plist */; };
+		BD4A1C5029F7DE6300BA84DD /* t_s.bmp in Resources */ = {isa = PBXBuildFile; fileRef = BD4A1C4F29F7DE6300BA84DD /* t_s.bmp */; };
+		BD5396912A1E0EE200BA71B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5396902A1E0EE000BA71B7 /* StoreKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		BD8411EC29F6644C0005956B /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
+		BD8411EE29F66C420005956B /* nunito-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8411ED29F66C410005956B /* nunito-black.ttf */; };
+		BD8411F029F66C520005956B /* nunito-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8411EF29F66C520005956B /* nunito-bold.ttf */; };
+		BD8411F229F66C690005956B /* nunito-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8411F129F66C680005956B /* nunito-light.ttf */; };
+		BD8411F429F66C770005956B /* nunito-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8411F329F66C770005956B /* nunito-regular.ttf */; };
+		BD8411F629F66C8F0005956B /* nunito-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD8411F529F66C8F0005956B /* nunito-semibold.ttf */; };
+		BD93D4462A395A57009F35F9 /* crackling_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD93D4422A395A56009F35F9 /* crackling_fire.mp3 */; };
+		BD93D4472A395A57009F35F9 /* wet_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD93D4432A395A56009F35F9 /* wet_white_noise.mp3 */; };
+		BD93D4482A395A57009F35F9 /* imperfect_brown_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD93D4442A395A57009F35F9 /* imperfect_brown_noise.mp3 */; };
+		BD93D4492A395A57009F35F9 /* wright_brothers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD93D4452A395A57009F35F9 /* wright_brothers.mp3 */; };
+		BD9561AC2A0A2AD300093BCF /* rain_white_noise.wav in Resources */ = {isa = PBXBuildFile; fileRef = BD95615A2A0A2A9200093BCF /* rain_white_noise.wav */; };
+		BD9561AD2A0A2AD300093BCF /* ronald_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95615B2A0A2A9200093BCF /* ronald_short_story.mp3 */; };
+		BD9561AE2A0A2AD300093BCF /* penumbra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95615C2A0A2A9300093BCF /* penumbra.mp3 */; };
+		BD9561AF2A0A2AD300093BCF /* swamp_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95615D2A0A2A9400093BCF /* swamp_ambience.mp3 */; };
+		BD9561B02A0A2AD300093BCF /* overworld_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95615E2A0A2A9500093BCF /* overworld_4.mp3 */; };
+		BD9561B12A0A2AD300093BCF /* ocean_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95615F2A0A2A9500093BCF /* ocean_short_story.mp3 */; };
+		BD9561B22A0A2AD300093BCF /* ocean_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561602A0A2A9600093BCF /* ocean_white_noise.mp3 */; };
+		BD9561B32A0A2AD300093BCF /* swells_1_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561612A0A2A9700093BCF /* swells_1_hearing_audio.mp3 */; };
+		BD9561B42A0A2AD300093BCF /* pastoral_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561622A0A2A9800093BCF /* pastoral_ambience.mp3 */; };
+		BD9561B52A0A2AD300093BCF /* the_london_symphony_orchestra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561632A0A2A9800093BCF /* the_london_symphony_orchestra.mp3 */; };
+		BD9561B62A0A2AD300093BCF /* wind_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561642A0A2A9900093BCF /* wind_hearing_audio.mp3 */; };
+		BD9561B72A0A2AD300093BCF /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561652A0A2A9A00093BCF /* chimes.mp3 */; };
+		BD9561B82A0A2AD300093BCF /* truck_horn_720.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561662A0A2A9B00093BCF /* truck_horn_720.mp3 */; };
+		BD9561B92A0A2AD300093BCF /* prometheus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561672A0A2A9C00093BCF /* prometheus.mp3 */; };
+		BD9561BA2A0A2AD300093BCF /* swells_3_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561682A0A2A9D00093BCF /* swells_3_hearing_audio.mp3 */; };
+		BD9561BB2A0A2AD300093BCF /* julio_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561692A0A2A9E00093BCF /* julio_short_story.mp3 */; };
+		BD9561BC2A0A2AD300093BCF /* small_fountain_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95616A2A0A2A9F00093BCF /* small_fountain_white_noise.mp3 */; };
+		BD9561BD2A0A2AD300093BCF /* lost_like_tears_in_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95616B2A0A2AA000093BCF /* lost_like_tears_in_rain.mp3 */; };
+		BD9561BE2A0A2AD300093BCF /* i_want_my.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95616C2A0A2AA000093BCF /* i_want_my.mp3 */; };
+		BD9561BF2A0A2AD300093BCF /* chicago_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95616D2A0A2AA100093BCF /* chicago_short_story.mp3 */; };
+		BD9561C02A0A2AD300093BCF /* chillwalker.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95616E2A0A2AA200093BCF /* chillwalker.mp3 */; };
+		BD9561C12A0A2AD300093BCF /* dream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95616F2A0A2AA300093BCF /* dream.mp3 */; };
+		BD9561C22A0A2AD300093BCF /* in_isolation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561702A0A2AA400093BCF /* in_isolation.mp3 */; };
+		BD9561C32A0A2AD300093BCF /* early_morning_waterfall_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561712A0A2AA500093BCF /* early_morning_waterfall_white_noise.mp3 */; };
+		BD9561C42A0A2AD300093BCF /* so_lonely.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561722A0A2AA600093BCF /* so_lonely.mp3 */; };
+		BD9561C52A0A2AD300093BCF /* stream_with_birds_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561732A0A2AA600093BCF /* stream_with_birds_white_noise.mp3 */; };
+		BD9561C62A0A2AD300093BCF /* undulations.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561742A0A2AA700093BCF /* undulations.mp3 */; };
+		BD9561C72A0A2AD300093BCF /* wolfs_song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561752A0A2AA800093BCF /* wolfs_song.mp3 */; };
+		BD9561C82A0A2AD300093BCF /* abner_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561762A0A2AA900093BCF /* abner_short_story.mp3 */; };
+		BD9561C92A0A2AD300093BCF /* pulses.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561772A0A2AAA00093BCF /* pulses.mp3 */; };
+		BD9561CA2A0A2AD300093BCF /* wake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561782A0A2AAB00093BCF /* wake.mp3 */; };
+		BD9561CB2A0A2AD300093BCF /* subwoofer_lullaby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561792A0A2AAB00093BCF /* subwoofer_lullaby.mp3 */; };
+		BD9561CC2A0A2AD300093BCF /* imber_nola.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95617A2A0A2AAD00093BCF /* imber_nola.mp3 */; };
+		BD9561CD2A0A2AD300093BCF /* industry_brewery.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95617B2A0A2AAD00093BCF /* industry_brewery.mp3 */; };
+		BD9561CE2A0A2AD300093BCF /* thunderstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95617C2A0A2AAE00093BCF /* thunderstorm.mp3 */; };
+		BD9561CF2A0A2AD300093BCF /* shower_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95617D2A0A2AAF00093BCF /* shower_white_noise.mp3 */; };
+		BD9561D02A0A2AD300093BCF /* drilling_concrete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95617E2A0A2AB000093BCF /* drilling_concrete.mp3 */; };
+		BD9561D12A0A2AD400093BCF /* swells_5_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95617F2A0A2AB100093BCF /* swells_5_hearing_audio.mp3 */; };
+		BD9561D22A0A2AD400093BCF /* rain_from_indoor_brown_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561802A0A2AB200093BCF /* rain_from_indoor_brown_noise.mp3 */; };
+		BD9561D32A0A2AD400093BCF /* spacecraft_speed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561812A0A2AB200093BCF /* spacecraft_speed.mp3 */; };
+		BD9561D42A0A2AD400093BCF /* swells_2_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561822A0A2AB300093BCF /* swells_2_hearing_audio.mp3 */; };
+		BD9561D52A0A2AD400093BCF /* cricket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561832A0A2AB400093BCF /* cricket.mp3 */; };
+		BD9561D62A0A2AD400093BCF /* joyceville.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561842A0A2AB700093BCF /* joyceville.mp3 */; };
+		BD9561D72A0A2AD400093BCF /* bell_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561852A0A2AB800093BCF /* bell_hearing_audio.mp3 */; };
+		BD9561D82A0A2AD400093BCF /* train_horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561862A0A2AB900093BCF /* train_horn.mp3 */; };
+		BD9561D92A0A2AD400093BCF /* countryside_dawn_chorus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561872A0A2ABA00093BCF /* countryside_dawn_chorus.mp3 */; };
+		BD9561DA2A0A2AD400093BCF /* ocean_waves_crushing_on_shore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561882A0A2ABB00093BCF /* ocean_waves_crushing_on_shore.mp3 */; };
+		BD9561DB2A0A2AD400093BCF /* middle_decimal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561892A0A2ABC00093BCF /* middle_decimal.mp3 */; };
+		BD9561DC2A0A2AD400093BCF /* reveille.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95618A2A0A2ABD00093BCF /* reveille.mp3 */; };
+		BD9561DD2A0A2AD400093BCF /* twohz_delta_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95618B2A0A2ABD00093BCF /* twohz_delta_white_noise.mp3 */; };
+		BD9561DE2A0A2AD400093BCF /* star_trek_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95618C2A0A2ABE00093BCF /* star_trek_white_noise.mp3 */; };
+		BD9561DF2A0A2AD400093BCF /* ripple_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95618D2A0A2ABF00093BCF /* ripple_hearing_audio.mp3 */; };
+		BD9561E02A0A2AD400093BCF /* holo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95618E2A0A2ABF00093BCF /* holo.mp3 */; };
+		BD9561E12A0A2AD400093BCF /* pink_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95618F2A0A2AC000093BCF /* pink_noise.mp3 */; };
+		BD9561E22A0A2AD400093BCF /* car_horn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561902A0A2AC100093BCF /* car_horn.mp3 */; };
+		BD9561E32A0A2AD400093BCF /* crouching_through_pain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561912A0A2AC100093BCF /* crouching_through_pain.mp3 */; };
+		BD9561E42A0A2AD400093BCF /* storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561922A0A2AC200093BCF /* storm.mp3 */; };
+		BD9561E52A0A2AD400093BCF /* ultra_deep_field.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561932A0A2AC200093BCF /* ultra_deep_field.mp3 */; };
+		BD9561E72A0A2AD400093BCF /* armand_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561952A0A2AC300093BCF /* armand_short_story.mp3 */; };
+		BD9561E82A0A2AD400093BCF /* super_deep_brown_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561962A0A2AC400093BCF /* super_deep_brown_noise.mp3 */; };
+		BD9561E92A0A2AD400093BCF /* heavy_rain_and_thunder_clap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561972A0A2AC400093BCF /* heavy_rain_and_thunder_clap.mp3 */; };
+		BD9561EA2A0A2AD400093BCF /* car_alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561982A0A2AC500093BCF /* car_alarm.mp3 */; };
+		BD9561EB2A0A2AD400093BCF /* threehz_delta_white_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561992A0A2AC600093BCF /* threehz_delta_white_noise.mp3 */; };
+		BD9561EC2A0A2AD400093BCF /* gringo_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95619A2A0A2AC600093BCF /* gringo_short_story.mp3 */; };
+		BD9561ED2A0A2AD400093BCF /* birdsong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95619B2A0A2AC700093BCF /* birdsong.mp3 */; };
+		BD9561EE2A0A2AD400093BCF /* snuggled_horror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95619C2A0A2AC800093BCF /* snuggled_horror.mp3 */; };
+		BD9561EF2A0A2AD400093BCF /* drilling_slow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95619D2A0A2AC800093BCF /* drilling_slow.mp3 */; };
+		BD9561F02A0A2AD400093BCF /* general_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95619E2A0A2AC900093BCF /* general_short_story.mp3 */; };
+		BD9561F12A0A2AD400093BCF /* clockmaker_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD95619F2A0A2ACA00093BCF /* clockmaker_short_story.mp3 */; };
+		BD9561F22A0A2AD400093BCF /* rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A02A0A2ACB00093BCF /* rooster.mp3 */; };
+		BD9561F32A0A2AD400093BCF /* nobel_prize.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A12A0A2ACB00093BCF /* nobel_prize.mp3 */; };
+		BD9561F42A0A2AD400093BCF /* intense_steel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A22A0A2ACC00093BCF /* intense_steel.mp3 */; };
+		BD9561F52A0A2AD400093BCF /* ping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A32A0A2ACC00093BCF /* ping.mp3 */; };
+		BD9561F62A0A2AD400093BCF /* dry_sticks_and_woods.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A42A0A2ACE00093BCF /* dry_sticks_and_woods.mp3 */; };
+		BD9561F72A0A2AD400093BCF /* swells_4_hearing_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A52A0A2ACF00093BCF /* swells_4_hearing_audio.mp3 */; };
+		BD9561F82A0A2AD400093BCF /* toll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A62A0A2ACF00093BCF /* toll.mp3 */; };
+		BD9561F92A0A2AD400093BCF /* tropical_jungle_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A72A0A2AD000093BCF /* tropical_jungle_ambience.mp3 */; };
+		BD9561FA2A0A2AD400093BCF /* cocoa_short_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A82A0A2AD000093BCF /* cocoa_short_story.mp3 */; };
+		BD9561FB2A0A2AD500093BCF /* leaves_in_your_hair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561A92A0A2AD100093BCF /* leaves_in_your_hair.mp3 */; };
+		BD9561FC2A0A2AD500093BCF /* halcyon_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561AA2A0A2AD100093BCF /* halcyon_2.mp3 */; };
+		BD9561FD2A0A2AD500093BCF /* crickets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BD9561AB2A0A2AD200093BCF /* crickets.mp3 */; };
+		BD9E020729F906D0007F5579 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = BD9E020629F906D0007F5579 /* assets */; };
+		BDAA44E429FA621B001C92BA /* audio in Resources */ = {isa = PBXBuildFile; fileRef = BDAA44E329FA621B001C92BA /* audio */; };
+		BDC7E9852A455204004B5442 /* nes_pink_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDC7E9832A455203004B5442 /* nes_pink_noise.mp3 */; };
+		BDC7E9862A455204004B5442 /* waves_pink_noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BDC7E9842A455204004B5442 /* waves_pink_noise.mp3 */; };
+		CDD6D7DB83D84237894C5697 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDB2D4010647AD8AD19400 /* noop-file.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		0511A3DEA63F2D6F98E52119 /* libPods-lightawake.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lightawake.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* lightawake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lightawake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = lightawake/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = lightawake/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = lightawake/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = lightawake/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = lightawake/main.m; sourceTree = "<group>"; };
+		8000D65D924FD7A2A384BAE9 /* Pods-lightawake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightawake.debug.xcconfig"; path = "Target Support Files/Pods-lightawake/Pods-lightawake.debug.xcconfig"; sourceTree = "<group>"; };
+		82694266BC992016F0CFB307 /* Pods-lightawake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lightawake.release.xcconfig"; path = "Target Support Files/Pods-lightawake/Pods-lightawake.release.xcconfig"; sourceTree = "<group>"; };
+		9ECDB2D4010647AD8AD19400 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "lightawake/noop-file.swift"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = lightawake/SplashScreen.storyboard; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		BD0FC9832A1F4DBD005799B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD4A1C4F29F7DE6300BA84DD /* t_s.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = t_s.bmp; sourceTree = "<group>"; };
+		BD5396902A1E0EE000BA71B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BD8411ED29F66C410005956B /* nunito-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nunito-black.ttf"; sourceTree = "<group>"; };
+		BD8411EF29F66C520005956B /* nunito-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nunito-bold.ttf"; sourceTree = "<group>"; };
+		BD8411F129F66C680005956B /* nunito-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nunito-light.ttf"; sourceTree = "<group>"; };
+		BD8411F329F66C770005956B /* nunito-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nunito-regular.ttf"; sourceTree = "<group>"; };
+		BD8411F529F66C8F0005956B /* nunito-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nunito-semibold.ttf"; sourceTree = "<group>"; };
+		BD93D4422A395A56009F35F9 /* crackling_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crackling_fire.mp3; path = "../../../Documents/lightAwake sound files/audio/crackling_fire.mp3"; sourceTree = "<group>"; };
+		BD93D4432A395A56009F35F9 /* wet_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wet_white_noise.mp3; path = "../../../Documents/lightAwake sound files/audio/wet_white_noise.mp3"; sourceTree = "<group>"; };
+		BD93D4442A395A57009F35F9 /* imperfect_brown_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = imperfect_brown_noise.mp3; path = "../../../Documents/lightAwake sound files/audio/imperfect_brown_noise.mp3"; sourceTree = "<group>"; };
+		BD93D4452A395A57009F35F9 /* wright_brothers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wright_brothers.mp3; path = "../../../Documents/lightAwake sound files/audio/wright_brothers.mp3"; sourceTree = "<group>"; };
+		BD95615A2A0A2A9200093BCF /* rain_white_noise.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = rain_white_noise.wav; path = ../audio/rain_white_noise.wav; sourceTree = "<group>"; };
+		BD95615B2A0A2A9200093BCF /* ronald_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ronald_short_story.mp3; path = ../audio/ronald_short_story.mp3; sourceTree = "<group>"; };
+		BD95615C2A0A2A9300093BCF /* penumbra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = penumbra.mp3; path = ../audio/penumbra.mp3; sourceTree = "<group>"; };
+		BD95615D2A0A2A9400093BCF /* swamp_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = swamp_ambience.mp3; path = ../audio/swamp_ambience.mp3; sourceTree = "<group>"; };
+		BD95615E2A0A2A9500093BCF /* overworld_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = overworld_4.mp3; path = ../audio/overworld_4.mp3; sourceTree = "<group>"; };
+		BD95615F2A0A2A9500093BCF /* ocean_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ocean_short_story.mp3; path = ../audio/ocean_short_story.mp3; sourceTree = "<group>"; };
+		BD9561602A0A2A9600093BCF /* ocean_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ocean_white_noise.mp3; path = ../audio/ocean_white_noise.mp3; sourceTree = "<group>"; };
+		BD9561612A0A2A9700093BCF /* swells_1_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = swells_1_hearing_audio.mp3; path = ../audio/swells_1_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD9561622A0A2A9800093BCF /* pastoral_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pastoral_ambience.mp3; path = ../audio/pastoral_ambience.mp3; sourceTree = "<group>"; };
+		BD9561632A0A2A9800093BCF /* the_london_symphony_orchestra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = the_london_symphony_orchestra.mp3; path = ../audio/the_london_symphony_orchestra.mp3; sourceTree = "<group>"; };
+		BD9561642A0A2A9900093BCF /* wind_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wind_hearing_audio.mp3; path = ../audio/wind_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD9561652A0A2A9A00093BCF /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chimes.mp3; path = ../audio/chimes.mp3; sourceTree = "<group>"; };
+		BD9561662A0A2A9B00093BCF /* truck_horn_720.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = truck_horn_720.mp3; path = ../audio/truck_horn_720.mp3; sourceTree = "<group>"; };
+		BD9561672A0A2A9C00093BCF /* prometheus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = prometheus.mp3; path = ../audio/prometheus.mp3; sourceTree = "<group>"; };
+		BD9561682A0A2A9D00093BCF /* swells_3_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = swells_3_hearing_audio.mp3; path = ../audio/swells_3_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD9561692A0A2A9E00093BCF /* julio_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = julio_short_story.mp3; path = ../audio/julio_short_story.mp3; sourceTree = "<group>"; };
+		BD95616A2A0A2A9F00093BCF /* small_fountain_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = small_fountain_white_noise.mp3; path = ../audio/small_fountain_white_noise.mp3; sourceTree = "<group>"; };
+		BD95616B2A0A2AA000093BCF /* lost_like_tears_in_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = lost_like_tears_in_rain.mp3; path = ../audio/lost_like_tears_in_rain.mp3; sourceTree = "<group>"; };
+		BD95616C2A0A2AA000093BCF /* i_want_my.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = i_want_my.mp3; path = ../audio/i_want_my.mp3; sourceTree = "<group>"; };
+		BD95616D2A0A2AA100093BCF /* chicago_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chicago_short_story.mp3; path = ../audio/chicago_short_story.mp3; sourceTree = "<group>"; };
+		BD95616E2A0A2AA200093BCF /* chillwalker.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chillwalker.mp3; path = ../audio/chillwalker.mp3; sourceTree = "<group>"; };
+		BD95616F2A0A2AA300093BCF /* dream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dream.mp3; path = ../audio/dream.mp3; sourceTree = "<group>"; };
+		BD9561702A0A2AA400093BCF /* in_isolation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = in_isolation.mp3; path = ../audio/in_isolation.mp3; sourceTree = "<group>"; };
+		BD9561712A0A2AA500093BCF /* early_morning_waterfall_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = early_morning_waterfall_white_noise.mp3; path = ../audio/early_morning_waterfall_white_noise.mp3; sourceTree = "<group>"; };
+		BD9561722A0A2AA600093BCF /* so_lonely.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = so_lonely.mp3; path = ../audio/so_lonely.mp3; sourceTree = "<group>"; };
+		BD9561732A0A2AA600093BCF /* stream_with_birds_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stream_with_birds_white_noise.mp3; path = ../audio/stream_with_birds_white_noise.mp3; sourceTree = "<group>"; };
+		BD9561742A0A2AA700093BCF /* undulations.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = undulations.mp3; path = ../audio/undulations.mp3; sourceTree = "<group>"; };
+		BD9561752A0A2AA800093BCF /* wolfs_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wolfs_song.mp3; path = ../audio/wolfs_song.mp3; sourceTree = "<group>"; };
+		BD9561762A0A2AA900093BCF /* abner_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = abner_short_story.mp3; path = ../audio/abner_short_story.mp3; sourceTree = "<group>"; };
+		BD9561772A0A2AAA00093BCF /* pulses.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pulses.mp3; path = ../audio/pulses.mp3; sourceTree = "<group>"; };
+		BD9561782A0A2AAB00093BCF /* wake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wake.mp3; path = ../audio/wake.mp3; sourceTree = "<group>"; };
+		BD9561792A0A2AAB00093BCF /* subwoofer_lullaby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = subwoofer_lullaby.mp3; path = ../audio/subwoofer_lullaby.mp3; sourceTree = "<group>"; };
+		BD95617A2A0A2AAD00093BCF /* imber_nola.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = imber_nola.mp3; path = ../audio/imber_nola.mp3; sourceTree = "<group>"; };
+		BD95617B2A0A2AAD00093BCF /* industry_brewery.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = industry_brewery.mp3; path = ../audio/industry_brewery.mp3; sourceTree = "<group>"; };
+		BD95617C2A0A2AAE00093BCF /* thunderstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = thunderstorm.mp3; path = ../audio/thunderstorm.mp3; sourceTree = "<group>"; };
+		BD95617D2A0A2AAF00093BCF /* shower_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shower_white_noise.mp3; path = ../audio/shower_white_noise.mp3; sourceTree = "<group>"; };
+		BD95617E2A0A2AB000093BCF /* drilling_concrete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = drilling_concrete.mp3; path = ../audio/drilling_concrete.mp3; sourceTree = "<group>"; };
+		BD95617F2A0A2AB100093BCF /* swells_5_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = swells_5_hearing_audio.mp3; path = ../audio/swells_5_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD9561802A0A2AB200093BCF /* rain_from_indoor_brown_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rain_from_indoor_brown_noise.mp3; path = ../audio/rain_from_indoor_brown_noise.mp3; sourceTree = "<group>"; };
+		BD9561812A0A2AB200093BCF /* spacecraft_speed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spacecraft_speed.mp3; path = ../audio/spacecraft_speed.mp3; sourceTree = "<group>"; };
+		BD9561822A0A2AB300093BCF /* swells_2_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = swells_2_hearing_audio.mp3; path = ../audio/swells_2_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD9561832A0A2AB400093BCF /* cricket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cricket.mp3; path = ../audio/cricket.mp3; sourceTree = "<group>"; };
+		BD9561842A0A2AB700093BCF /* joyceville.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = joyceville.mp3; path = ../audio/joyceville.mp3; sourceTree = "<group>"; };
+		BD9561852A0A2AB800093BCF /* bell_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bell_hearing_audio.mp3; path = ../audio/bell_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD9561862A0A2AB900093BCF /* train_horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = train_horn.mp3; path = ../audio/train_horn.mp3; sourceTree = "<group>"; };
+		BD9561872A0A2ABA00093BCF /* countryside_dawn_chorus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = countryside_dawn_chorus.mp3; path = ../audio/countryside_dawn_chorus.mp3; sourceTree = "<group>"; };
+		BD9561882A0A2ABB00093BCF /* ocean_waves_crushing_on_shore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ocean_waves_crushing_on_shore.mp3; path = ../audio/ocean_waves_crushing_on_shore.mp3; sourceTree = "<group>"; };
+		BD9561892A0A2ABC00093BCF /* middle_decimal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = middle_decimal.mp3; path = ../audio/middle_decimal.mp3; sourceTree = "<group>"; };
+		BD95618A2A0A2ABD00093BCF /* reveille.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = reveille.mp3; path = ../audio/reveille.mp3; sourceTree = "<group>"; };
+		BD95618B2A0A2ABD00093BCF /* twohz_delta_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = twohz_delta_white_noise.mp3; path = ../audio/twohz_delta_white_noise.mp3; sourceTree = "<group>"; };
+		BD95618C2A0A2ABE00093BCF /* star_trek_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = star_trek_white_noise.mp3; path = ../audio/star_trek_white_noise.mp3; sourceTree = "<group>"; };
+		BD95618D2A0A2ABF00093BCF /* ripple_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ripple_hearing_audio.mp3; path = ../audio/ripple_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD95618E2A0A2ABF00093BCF /* holo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = holo.mp3; path = ../audio/holo.mp3; sourceTree = "<group>"; };
+		BD95618F2A0A2AC000093BCF /* pink_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pink_noise.mp3; path = ../audio/pink_noise.mp3; sourceTree = "<group>"; };
+		BD9561902A0A2AC100093BCF /* car_horn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = car_horn.mp3; path = ../audio/car_horn.mp3; sourceTree = "<group>"; };
+		BD9561912A0A2AC100093BCF /* crouching_through_pain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crouching_through_pain.mp3; path = ../audio/crouching_through_pain.mp3; sourceTree = "<group>"; };
+		BD9561922A0A2AC200093BCF /* storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = storm.mp3; path = ../audio/storm.mp3; sourceTree = "<group>"; };
+		BD9561932A0A2AC200093BCF /* ultra_deep_field.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ultra_deep_field.mp3; path = ../audio/ultra_deep_field.mp3; sourceTree = "<group>"; };
+		BD9561952A0A2AC300093BCF /* armand_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = armand_short_story.mp3; path = ../audio/armand_short_story.mp3; sourceTree = "<group>"; };
+		BD9561962A0A2AC400093BCF /* super_deep_brown_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = super_deep_brown_noise.mp3; path = ../audio/super_deep_brown_noise.mp3; sourceTree = "<group>"; };
+		BD9561972A0A2AC400093BCF /* heavy_rain_and_thunder_clap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = heavy_rain_and_thunder_clap.mp3; path = ../audio/heavy_rain_and_thunder_clap.mp3; sourceTree = "<group>"; };
+		BD9561982A0A2AC500093BCF /* car_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = car_alarm.mp3; path = ../audio/car_alarm.mp3; sourceTree = "<group>"; };
+		BD9561992A0A2AC600093BCF /* threehz_delta_white_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = threehz_delta_white_noise.mp3; path = ../audio/threehz_delta_white_noise.mp3; sourceTree = "<group>"; };
+		BD95619A2A0A2AC600093BCF /* gringo_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gringo_short_story.mp3; path = ../audio/gringo_short_story.mp3; sourceTree = "<group>"; };
+		BD95619B2A0A2AC700093BCF /* birdsong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = birdsong.mp3; path = ../audio/birdsong.mp3; sourceTree = "<group>"; };
+		BD95619C2A0A2AC800093BCF /* snuggled_horror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = snuggled_horror.mp3; path = ../audio/snuggled_horror.mp3; sourceTree = "<group>"; };
+		BD95619D2A0A2AC800093BCF /* drilling_slow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = drilling_slow.mp3; path = ../audio/drilling_slow.mp3; sourceTree = "<group>"; };
+		BD95619E2A0A2AC900093BCF /* general_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = general_short_story.mp3; path = ../audio/general_short_story.mp3; sourceTree = "<group>"; };
+		BD95619F2A0A2ACA00093BCF /* clockmaker_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clockmaker_short_story.mp3; path = ../audio/clockmaker_short_story.mp3; sourceTree = "<group>"; };
+		BD9561A02A0A2ACB00093BCF /* rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rooster.mp3; path = ../audio/rooster.mp3; sourceTree = "<group>"; };
+		BD9561A12A0A2ACB00093BCF /* nobel_prize.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = nobel_prize.mp3; path = ../audio/nobel_prize.mp3; sourceTree = "<group>"; };
+		BD9561A22A0A2ACC00093BCF /* intense_steel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = intense_steel.mp3; path = ../audio/intense_steel.mp3; sourceTree = "<group>"; };
+		BD9561A32A0A2ACC00093BCF /* ping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ping.mp3; path = ../audio/ping.mp3; sourceTree = "<group>"; };
+		BD9561A42A0A2ACE00093BCF /* dry_sticks_and_woods.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = dry_sticks_and_woods.mp3; path = ../audio/dry_sticks_and_woods.mp3; sourceTree = "<group>"; };
+		BD9561A52A0A2ACF00093BCF /* swells_4_hearing_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = swells_4_hearing_audio.mp3; path = ../audio/swells_4_hearing_audio.mp3; sourceTree = "<group>"; };
+		BD9561A62A0A2ACF00093BCF /* toll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = toll.mp3; path = ../audio/toll.mp3; sourceTree = "<group>"; };
+		BD9561A72A0A2AD000093BCF /* tropical_jungle_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tropical_jungle_ambience.mp3; path = ../audio/tropical_jungle_ambience.mp3; sourceTree = "<group>"; };
+		BD9561A82A0A2AD000093BCF /* cocoa_short_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = cocoa_short_story.mp3; path = ../audio/cocoa_short_story.mp3; sourceTree = "<group>"; };
+		BD9561A92A0A2AD100093BCF /* leaves_in_your_hair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = leaves_in_your_hair.mp3; path = ../audio/leaves_in_your_hair.mp3; sourceTree = "<group>"; };
+		BD9561AA2A0A2AD100093BCF /* halcyon_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = halcyon_2.mp3; path = ../audio/halcyon_2.mp3; sourceTree = "<group>"; };
+		BD9561AB2A0A2AD200093BCF /* crickets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = crickets.mp3; path = ../audio/crickets.mp3; sourceTree = "<group>"; };
+		BD9E020629F906D0007F5579 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		BDAA44E329FA621B001C92BA /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = audio; path = "../../Documents/lightAwake sound files/audio"; sourceTree = "<group>"; };
+		BDC7E9832A455203004B5442 /* nes_pink_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nes_pink_noise.mp3; sourceTree = "<group>"; };
+		BDC7E9842A455204004B5442 /* waves_pink_noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waves_pink_noise.mp3; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-lightawake/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5396912A1E0EE200BA71B7 /* StoreKit.framework in Frameworks */,
+				8EB8757D01DB522862E26917 /* libPods-lightawake.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* lightawake */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792B24A3F905000567C9 /* Supporting */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+				9ECDB2D4010647AD8AD19400 /* noop-file.swift */,
+			);
+			name = lightawake;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD5396902A1E0EE000BA71B7 /* StoreKit.framework */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				0511A3DEA63F2D6F98E52119 /* libPods-lightawake.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BD9E020629F906D0007F5579 /* assets */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				BD0FC9832A1F4DBD005799B9 /* GoogleService-Info.plist */,
+				BDAA44E329FA621B001C92BA /* audio */,
+				13B07FAE1A68108700A75B9A /* lightawake */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				D65327D7A22EEC0BE12398D9 /* Pods */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				BD8411FA29F67EDC0005956B /* Fonts */,
+				BD8411F829F66D570005956B /* Resources */,
+				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* lightawake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DBD88DE9BF7D494EA9DA96 /* lightawake */ = {
+			isa = PBXGroup;
+			children = (
+				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
+			);
+			name = lightawake;
+			sourceTree = "<group>";
+		};
+		BB2F792B24A3F905000567C9 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792C24A3F905000567C9 /* Expo.plist */,
+			);
+			name = Supporting;
+			path = lightawake/Supporting;
+			sourceTree = "<group>";
+		};
+		BD8411F829F66D570005956B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDC7E9832A455203004B5442 /* nes_pink_noise.mp3 */,
+				BDC7E9842A455204004B5442 /* waves_pink_noise.mp3 */,
+				BD9561762A0A2AA900093BCF /* abner_short_story.mp3 */,
+				BD9561952A0A2AC300093BCF /* armand_short_story.mp3 */,
+				BD9561852A0A2AB800093BCF /* bell_hearing_audio.mp3 */,
+				BD95619B2A0A2AC700093BCF /* birdsong.mp3 */,
+				BD9561982A0A2AC500093BCF /* car_alarm.mp3 */,
+				BD9561902A0A2AC100093BCF /* car_horn.mp3 */,
+				BD95616D2A0A2AA100093BCF /* chicago_short_story.mp3 */,
+				BD95616E2A0A2AA200093BCF /* chillwalker.mp3 */,
+				BD9561652A0A2A9A00093BCF /* chimes.mp3 */,
+				BD95619F2A0A2ACA00093BCF /* clockmaker_short_story.mp3 */,
+				BD9561A82A0A2AD000093BCF /* cocoa_short_story.mp3 */,
+				BD9561872A0A2ABA00093BCF /* countryside_dawn_chorus.mp3 */,
+				BD9561832A0A2AB400093BCF /* cricket.mp3 */,
+				BD9561AB2A0A2AD200093BCF /* crickets.mp3 */,
+				BD9561912A0A2AC100093BCF /* crouching_through_pain.mp3 */,
+				BD95616F2A0A2AA300093BCF /* dream.mp3 */,
+				BD95617E2A0A2AB000093BCF /* drilling_concrete.mp3 */,
+				BD95619D2A0A2AC800093BCF /* drilling_slow.mp3 */,
+				BD9561A42A0A2ACE00093BCF /* dry_sticks_and_woods.mp3 */,
+				BD9561712A0A2AA500093BCF /* early_morning_waterfall_white_noise.mp3 */,
+				BD95619E2A0A2AC900093BCF /* general_short_story.mp3 */,
+				BD95619A2A0A2AC600093BCF /* gringo_short_story.mp3 */,
+				BD9561AA2A0A2AD100093BCF /* halcyon_2.mp3 */,
+				BD9561972A0A2AC400093BCF /* heavy_rain_and_thunder_clap.mp3 */,
+				BD95618E2A0A2ABF00093BCF /* holo.mp3 */,
+				BD95616C2A0A2AA000093BCF /* i_want_my.mp3 */,
+				BD95617A2A0A2AAD00093BCF /* imber_nola.mp3 */,
+				BD9561702A0A2AA400093BCF /* in_isolation.mp3 */,
+				BD95617B2A0A2AAD00093BCF /* industry_brewery.mp3 */,
+				BD9561A22A0A2ACC00093BCF /* intense_steel.mp3 */,
+				BD9561842A0A2AB700093BCF /* joyceville.mp3 */,
+				BD9561692A0A2A9E00093BCF /* julio_short_story.mp3 */,
+				BD9561A92A0A2AD100093BCF /* leaves_in_your_hair.mp3 */,
+				BD95616B2A0A2AA000093BCF /* lost_like_tears_in_rain.mp3 */,
+				BD9561892A0A2ABC00093BCF /* middle_decimal.mp3 */,
+				BD9561A12A0A2ACB00093BCF /* nobel_prize.mp3 */,
+				BD95615F2A0A2A9500093BCF /* ocean_short_story.mp3 */,
+				BD9561882A0A2ABB00093BCF /* ocean_waves_crushing_on_shore.mp3 */,
+				BD9561602A0A2A9600093BCF /* ocean_white_noise.mp3 */,
+				BD95615E2A0A2A9500093BCF /* overworld_4.mp3 */,
+				BD9561622A0A2A9800093BCF /* pastoral_ambience.mp3 */,
+				BD95615C2A0A2A9300093BCF /* penumbra.mp3 */,
+				BD9561A32A0A2ACC00093BCF /* ping.mp3 */,
+				BD95618F2A0A2AC000093BCF /* pink_noise.mp3 */,
+				BD9561672A0A2A9C00093BCF /* prometheus.mp3 */,
+				BD9561772A0A2AAA00093BCF /* pulses.mp3 */,
+				BD9561802A0A2AB200093BCF /* rain_from_indoor_brown_noise.mp3 */,
+				BD95615A2A0A2A9200093BCF /* rain_white_noise.wav */,
+				BD95618A2A0A2ABD00093BCF /* reveille.mp3 */,
+				BD95618D2A0A2ABF00093BCF /* ripple_hearing_audio.mp3 */,
+				BD95615B2A0A2A9200093BCF /* ronald_short_story.mp3 */,
+				BD9561A02A0A2ACB00093BCF /* rooster.mp3 */,
+				BD95617D2A0A2AAF00093BCF /* shower_white_noise.mp3 */,
+				BD95616A2A0A2A9F00093BCF /* small_fountain_white_noise.mp3 */,
+				BD95619C2A0A2AC800093BCF /* snuggled_horror.mp3 */,
+				BD9561722A0A2AA600093BCF /* so_lonely.mp3 */,
+				BD9561812A0A2AB200093BCF /* spacecraft_speed.mp3 */,
+				BD95618C2A0A2ABE00093BCF /* star_trek_white_noise.mp3 */,
+				BD9561922A0A2AC200093BCF /* storm.mp3 */,
+				BD9561732A0A2AA600093BCF /* stream_with_birds_white_noise.mp3 */,
+				BD9561792A0A2AAB00093BCF /* subwoofer_lullaby.mp3 */,
+				BD9561962A0A2AC400093BCF /* super_deep_brown_noise.mp3 */,
+				BD95615D2A0A2A9400093BCF /* swamp_ambience.mp3 */,
+				BD9561612A0A2A9700093BCF /* swells_1_hearing_audio.mp3 */,
+				BD9561822A0A2AB300093BCF /* swells_2_hearing_audio.mp3 */,
+				BD93D4422A395A56009F35F9 /* crackling_fire.mp3 */,
+				BD93D4442A395A57009F35F9 /* imperfect_brown_noise.mp3 */,
+				BD93D4432A395A56009F35F9 /* wet_white_noise.mp3 */,
+				BD93D4452A395A57009F35F9 /* wright_brothers.mp3 */,
+				BD9561682A0A2A9D00093BCF /* swells_3_hearing_audio.mp3 */,
+				BD9561A52A0A2ACF00093BCF /* swells_4_hearing_audio.mp3 */,
+				BD95617F2A0A2AB100093BCF /* swells_5_hearing_audio.mp3 */,
+				BD9561632A0A2A9800093BCF /* the_london_symphony_orchestra.mp3 */,
+				BD9561992A0A2AC600093BCF /* threehz_delta_white_noise.mp3 */,
+				BD95617C2A0A2AAE00093BCF /* thunderstorm.mp3 */,
+				BD9561A62A0A2ACF00093BCF /* toll.mp3 */,
+				BD9561862A0A2AB900093BCF /* train_horn.mp3 */,
+				BD9561A72A0A2AD000093BCF /* tropical_jungle_ambience.mp3 */,
+				BD9561662A0A2A9B00093BCF /* truck_horn_720.mp3 */,
+				BD95618B2A0A2ABD00093BCF /* twohz_delta_white_noise.mp3 */,
+				BD9561932A0A2AC200093BCF /* ultra_deep_field.mp3 */,
+				BD9561742A0A2AA700093BCF /* undulations.mp3 */,
+				BD9561782A0A2AAB00093BCF /* wake.mp3 */,
+				BD9561642A0A2A9900093BCF /* wind_hearing_audio.mp3 */,
+				BD9561752A0A2AA800093BCF /* wolfs_song.mp3 */,
+				BD4A1C4F29F7DE6300BA84DD /* t_s.bmp */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BD8411FA29F67EDC0005956B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BD8411F529F66C8F0005956B /* nunito-semibold.ttf */,
+				BD8411F329F66C770005956B /* nunito-regular.ttf */,
+				BD8411F129F66C680005956B /* nunito-light.ttf */,
+				BD8411ED29F66C410005956B /* nunito-black.ttf */,
+				BD8411EF29F66C520005956B /* nunito-bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D65327D7A22EEC0BE12398D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8000D65D924FD7A2A384BAE9 /* Pods-lightawake.debug.xcconfig */,
+				82694266BC992016F0CFB307 /* Pods-lightawake.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				92DBD88DE9BF7D494EA9DA96 /* lightawake */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* lightawake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "lightawake" */;
+			buildPhases = (
+				A2A44DA73C39561FFF9C807D /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				32F0D9D5AC52DE01ABA3D70C /* [CP] Embed Pods Frameworks */,
+				6B69B6392960E25348CE490F /* [CP] Copy Pods Resources */,
+				772E30CD2C8AE6B66E0A1200 /* [CP-User] [RNFB] Core Configuration */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lightawake;
+			productName = lightawake;
+			productReference = 13B07F961A680F5B00A75B9A /* lightawake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = GW3M2Q3PDS;
+						LastSwiftMigration = 1250;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "lightawake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* lightawake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9561AC2A0A2AD300093BCF /* rain_white_noise.wav in Resources */,
+				BD9561AD2A0A2AD300093BCF /* ronald_short_story.mp3 in Resources */,
+				BD9561AE2A0A2AD300093BCF /* penumbra.mp3 in Resources */,
+				BD9561AF2A0A2AD300093BCF /* swamp_ambience.mp3 in Resources */,
+				BD9561B02A0A2AD300093BCF /* overworld_4.mp3 in Resources */,
+				BD9561B12A0A2AD300093BCF /* ocean_short_story.mp3 in Resources */,
+				BD9561B22A0A2AD300093BCF /* ocean_white_noise.mp3 in Resources */,
+				BD9561B32A0A2AD300093BCF /* swells_1_hearing_audio.mp3 in Resources */,
+				BD93D4482A395A57009F35F9 /* imperfect_brown_noise.mp3 in Resources */,
+				BD9561B42A0A2AD300093BCF /* pastoral_ambience.mp3 in Resources */,
+				BD9561B52A0A2AD300093BCF /* the_london_symphony_orchestra.mp3 in Resources */,
+				BD9561B62A0A2AD300093BCF /* wind_hearing_audio.mp3 in Resources */,
+				BD9561B72A0A2AD300093BCF /* chimes.mp3 in Resources */,
+				BD9561B82A0A2AD300093BCF /* truck_horn_720.mp3 in Resources */,
+				BD9561B92A0A2AD300093BCF /* prometheus.mp3 in Resources */,
+				BD9561BA2A0A2AD300093BCF /* swells_3_hearing_audio.mp3 in Resources */,
+				BD9561BB2A0A2AD300093BCF /* julio_short_story.mp3 in Resources */,
+				BD9561BC2A0A2AD300093BCF /* small_fountain_white_noise.mp3 in Resources */,
+				BD9561BD2A0A2AD300093BCF /* lost_like_tears_in_rain.mp3 in Resources */,
+				BD9561BE2A0A2AD300093BCF /* i_want_my.mp3 in Resources */,
+				BD9561BF2A0A2AD300093BCF /* chicago_short_story.mp3 in Resources */,
+				BD9561C02A0A2AD300093BCF /* chillwalker.mp3 in Resources */,
+				BD9561C12A0A2AD300093BCF /* dream.mp3 in Resources */,
+				BD9561C22A0A2AD300093BCF /* in_isolation.mp3 in Resources */,
+				BD9561C32A0A2AD300093BCF /* early_morning_waterfall_white_noise.mp3 in Resources */,
+				BD9561C42A0A2AD300093BCF /* so_lonely.mp3 in Resources */,
+				BD9561C52A0A2AD300093BCF /* stream_with_birds_white_noise.mp3 in Resources */,
+				BD9561C62A0A2AD300093BCF /* undulations.mp3 in Resources */,
+				BD9561C72A0A2AD300093BCF /* wolfs_song.mp3 in Resources */,
+				BD9561C82A0A2AD300093BCF /* abner_short_story.mp3 in Resources */,
+				BD93D4492A395A57009F35F9 /* wright_brothers.mp3 in Resources */,
+				BD9561C92A0A2AD300093BCF /* pulses.mp3 in Resources */,
+				BD9561CA2A0A2AD300093BCF /* wake.mp3 in Resources */,
+				BD9561CB2A0A2AD300093BCF /* subwoofer_lullaby.mp3 in Resources */,
+				BD9561CC2A0A2AD300093BCF /* imber_nola.mp3 in Resources */,
+				BD9561CD2A0A2AD300093BCF /* industry_brewery.mp3 in Resources */,
+				BD9561CE2A0A2AD300093BCF /* thunderstorm.mp3 in Resources */,
+				BD9561CF2A0A2AD300093BCF /* shower_white_noise.mp3 in Resources */,
+				BD9561D02A0A2AD300093BCF /* drilling_concrete.mp3 in Resources */,
+				BD9561D12A0A2AD400093BCF /* swells_5_hearing_audio.mp3 in Resources */,
+				BD9561D22A0A2AD400093BCF /* rain_from_indoor_brown_noise.mp3 in Resources */,
+				BD9561D32A0A2AD400093BCF /* spacecraft_speed.mp3 in Resources */,
+				BD9561D42A0A2AD400093BCF /* swells_2_hearing_audio.mp3 in Resources */,
+				BD9561D52A0A2AD400093BCF /* cricket.mp3 in Resources */,
+				BD9561D62A0A2AD400093BCF /* joyceville.mp3 in Resources */,
+				BD9561D72A0A2AD400093BCF /* bell_hearing_audio.mp3 in Resources */,
+				BD9561D82A0A2AD400093BCF /* train_horn.mp3 in Resources */,
+				BD9561D92A0A2AD400093BCF /* countryside_dawn_chorus.mp3 in Resources */,
+				BD9561DA2A0A2AD400093BCF /* ocean_waves_crushing_on_shore.mp3 in Resources */,
+				BD9561DB2A0A2AD400093BCF /* middle_decimal.mp3 in Resources */,
+				BDC7E9862A455204004B5442 /* waves_pink_noise.mp3 in Resources */,
+				BD9561DC2A0A2AD400093BCF /* reveille.mp3 in Resources */,
+				BD9561DD2A0A2AD400093BCF /* twohz_delta_white_noise.mp3 in Resources */,
+				BD9561DE2A0A2AD400093BCF /* star_trek_white_noise.mp3 in Resources */,
+				BD9561DF2A0A2AD400093BCF /* ripple_hearing_audio.mp3 in Resources */,
+				BD9561E02A0A2AD400093BCF /* holo.mp3 in Resources */,
+				BD9561E12A0A2AD400093BCF /* pink_noise.mp3 in Resources */,
+				BD9561E22A0A2AD400093BCF /* car_horn.mp3 in Resources */,
+				BD9561E32A0A2AD400093BCF /* crouching_through_pain.mp3 in Resources */,
+				BD9561E42A0A2AD400093BCF /* storm.mp3 in Resources */,
+				BD9561E52A0A2AD400093BCF /* ultra_deep_field.mp3 in Resources */,
+				BD9561E72A0A2AD400093BCF /* armand_short_story.mp3 in Resources */,
+				BD9561E82A0A2AD400093BCF /* super_deep_brown_noise.mp3 in Resources */,
+				BD9561E92A0A2AD400093BCF /* heavy_rain_and_thunder_clap.mp3 in Resources */,
+				BD9561EA2A0A2AD400093BCF /* car_alarm.mp3 in Resources */,
+				BD9561EB2A0A2AD400093BCF /* threehz_delta_white_noise.mp3 in Resources */,
+				BD9561EC2A0A2AD400093BCF /* gringo_short_story.mp3 in Resources */,
+				BD9561ED2A0A2AD400093BCF /* birdsong.mp3 in Resources */,
+				BD9561EE2A0A2AD400093BCF /* snuggled_horror.mp3 in Resources */,
+				BD9561EF2A0A2AD400093BCF /* drilling_slow.mp3 in Resources */,
+				BD9561F02A0A2AD400093BCF /* general_short_story.mp3 in Resources */,
+				BD9561F12A0A2AD400093BCF /* clockmaker_short_story.mp3 in Resources */,
+				BD9561F22A0A2AD400093BCF /* rooster.mp3 in Resources */,
+				BD9561F32A0A2AD400093BCF /* nobel_prize.mp3 in Resources */,
+				BD9561F42A0A2AD400093BCF /* intense_steel.mp3 in Resources */,
+				BD9561F52A0A2AD400093BCF /* ping.mp3 in Resources */,
+				BD9561F62A0A2AD400093BCF /* dry_sticks_and_woods.mp3 in Resources */,
+				BD9561F72A0A2AD400093BCF /* swells_4_hearing_audio.mp3 in Resources */,
+				BD9561F82A0A2AD400093BCF /* toll.mp3 in Resources */,
+				BD9561F92A0A2AD400093BCF /* tropical_jungle_ambience.mp3 in Resources */,
+				BDC7E9852A455204004B5442 /* nes_pink_noise.mp3 in Resources */,
+				BD9561FA2A0A2AD400093BCF /* cocoa_short_story.mp3 in Resources */,
+				BD9561FB2A0A2AD500093BCF /* leaves_in_your_hair.mp3 in Resources */,
+				BD9561FC2A0A2AD500093BCF /* halcyon_2.mp3 in Resources */,
+				BD9561FD2A0A2AD500093BCF /* crickets.mp3 in Resources */,
+				BDAA44E429FA621B001C92BA /* audio in Resources */,
+				BD9E020729F906D0007F5579 /* assets in Resources */,
+				BD4A1C5029F7DE6300BA84DD /* t_s.bmp in Resources */,
+				BD8411F629F66C8F0005956B /* nunito-semibold.ttf in Resources */,
+				BD8411F429F66C770005956B /* nunito-regular.ttf in Resources */,
+				BD0FC9842A1F4DBE005799B9 /* GoogleService-Info.plist in Resources */,
+				BD8411F229F66C690005956B /* nunito-light.ttf in Resources */,
+				BD8411F029F66C520005956B /* nunito-bold.ttf in Resources */,
+				BD8411EE29F66C420005956B /* nunito-black.ttf in Resources */,
+				BD93D4462A395A57009F35F9 /* crackling_fire.mp3 in Resources */,
+				BD8411EC29F6644C0005956B /* main.jsbundle in Resources */,
+				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				BD93D4472A395A57009F35F9 /* wet_white_noise.mp3 in Resources */,
+				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" $PROJECT_ROOT ios relative | tail -n 1)\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		32F0D9D5AC52DE01ABA3D70C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lightawake/Pods-lightawake-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKGamingServicesKit/FBSDKGamingServicesKit.framework/FBSDKGamingServicesKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/FBSDKLoginKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/FBSDKShareKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TYMbedtls/TYMbedtls.framework/TYMbedtls",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TuyaSmartQUIC/TuyaSmartQUIC.framework/TuyaSmartQUIC",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TuyaSmartUtil/TuyaSmartUtil.framework/TuyaSmartUtil",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKGamingServicesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYMbedtls.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaSmartQUIC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TuyaSmartUtil.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lightawake/Pods-lightawake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B69B6392960E25348CE490F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lightawake/Pods-lightawake-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXUpdates/EXUpdates.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/TuyaDefaultPanelUIKit/Build/TuyaDefaultPanelUIKit.xcframework/ios-arm64_armv7/TuyaDefaultPanelUIKit.framework/CustomResources/Bundles/TuyaDefaultPanelUIKit.bundle",
+				"${PODS_ROOT}/TuyaSmartNetworkKit/Build/TuyaSmartNetworkKit.xcframework/ios-arm64_armv7/TuyaSmartNetworkKit.framework/CustomResources/Assets/cerficate_h2_local",
+				"${PODS_ROOT}/TuyaSmartNetworkKit/Build/TuyaSmartNetworkKit.xcframework/ios-arm64_armv7/TuyaSmartNetworkKit.framework/CustomResources/Assets/cerficate_v2",
+				"${PODS_ROOT}/TuyaSmartNetworkKit/Build/TuyaSmartNetworkKit.xcframework/ios-arm64_armv7/TuyaSmartNetworkKit.framework/CustomResources/Assets/cerficate_v3",
+				"${PODS_ROOT}/TuyaSmartNetworkKit/Build/TuyaSmartNetworkKit.xcframework/ios-arm64_armv7/TuyaSmartNetworkKit.framework/CustomResources/Assets/h2.ca.der",
+				"${PODS_ROOT}/TuyaSmartNetworkKit/Build/TuyaSmartNetworkKit.xcframework/ios-arm64_armv7/TuyaSmartNetworkKit.framework/CustomResources/Assets/tydomain_v1.tuyacfg",
+				"${PODS_ROOT}/TuyaSmartUtil/Build/TuyaSmartUtil.xcframework/ios-arm64_armv7/TuyaSmartUtil.framework/TuyaSmartUtil.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXUpdates.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TuyaDefaultPanelUIKit.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cerficate_h2_local",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cerficate_v2",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cerficate_v3",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/h2.ca.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tydomain_v1.tuyacfg",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TuyaSmartUtil.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lightawake/Pods-lightawake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		772E30CD2C8AE6B66E0A1200 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		A2A44DA73C39561FFF9C807D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lightawake-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\nexport RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > `$NODE_BINARY --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/.packager.env'\"`\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open `$NODE_BINARY --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/launchPackager.command'\"` || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+				CDD6D7DB83D84237894C5697 /* noop-file.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8000D65D924FD7A2A384BAE9 /* Pods-lightawake.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = lightawake/lightawake.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 37;
+				DEVELOPMENT_TEAM = GW3M2Q3PDS;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = lightawake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Light Awake";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.3.37;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightawake.2021reimagined;
+				PRODUCT_NAME = lightawake;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82694266BC992016F0CFB307 /* Pods-lightawake.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = lightawake/lightawake.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 37;
+				DEVELOPMENT_TEAM = GW3M2Q3PDS;
+				INFOPLIST_FILE = lightawake/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Light Awake";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 2.3.37;
+				NEW_SETTING = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightawake.2021reimagined;
+				PRODUCT_NAME = lightawake;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "lightawake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "lightawake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

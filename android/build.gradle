@@ -1,0 +1,61 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.8.0'
+    ext {
+        androidXAnnotation = "1.1.0"
+        androidXBrowser = "1.0.0"
+        buildToolsVersion = "29.0.3"
+        compileSdkVersion = 33
+        firebaseIidVersion = "19.0.1"
+        firebaseMessagingVersion = "+" // default: "21.1.0"
+        googlePlayServicesAuthVersion = "19.2.0"
+        googlePlayServicesVersion = "+"
+        kotlinVersion = '1.6.0'
+        mediaCompatVersion = "1.0.1"
+        minSdkVersion = 24
+        targetSdkVersion = 32
+        supportLibVersion = "28.0.0"
+        supportV4Version = "1.0.0"
+        frescoVersion = findProperty('expo.frescoVersion') ?: '2.5.0'
+
+        // We use NDK 23 which has both M1 support and is the side-by-side NDK version from AGP.
+        ndkVersion = "23.1.7779620"
+    }
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath('com.android.tools.build:gradle:7.4.2')
+        classpath('com.google.gms:google-services:4.3.15')
+        classpath('com.facebook.react:react-native-gradle-plugin')
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url(new File(['node', '--print', "require.resolve('react-native/package.json')"].execute(null, rootDir).text.trim(), '../android'))
+        }
+        maven {
+            // Android JSC is installed from npm
+            url(new File(['node', '--print', "require.resolve('jsc-android/package.json')"].execute(null, rootDir).text.trim(), '../dist'))
+        }
+        mavenCentral()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
+        maven { url "https://maven.google.com" }
+        maven{url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url "https://maven-other.tuya.com/repository/maven-releases/"}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

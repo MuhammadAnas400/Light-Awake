@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "lightawake",
+    "jsEngine": "hermes",
+    "android": {
+      "package": "com.lightawakereimagined"
+    },
+    "ios": {
+      "bundleIdentifier": "com.lightawake.2021reimagined"
+    }
+  }
+}
